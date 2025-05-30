@@ -4,15 +4,15 @@
 #include "fast_test_coding_case.hpp"
 #include "byte_stream.h"
 
-#include "simple18.h"
+#include "simple19.h"
 
 using namespace test::coding;
 
 TEST_CASE("set encoder/decoder","[set_encoder_decoder]")
 {
-    fast_test_coding_case<simple18::templates_description> test_case;
-    simple18::Test_1 test_1;
-    simple18::Test_1_mref test_1_mref = test_1.mref();
+    fast_test_coding_case<simple19::templates_description> test_case;
+    simple19::Test_1 test_1;
+    simple19::Test_1_mref test_1_mref = test_1.mref();
 
     test_1_mref.set_field1().as(10);
 
